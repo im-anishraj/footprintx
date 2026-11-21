@@ -1,0 +1,16 @@
+service_id: data-broker-removal
+title: "Request Removal from Data Brokers"
+difficulty: hard
+time_minutes: 60
+steps:
+  - "Search for yourself on major data broker sites"
+  - "Common brokers include Spokeo, WhitePages, BeenVerified"
+  - "Visit each broker's opt-out or removal page"
+  - "Follow their specific removal process"
+  - "Keep records of your removal requests and dates"
+  - "Check back after 2-4 weeks to verify removal"
+  - "Repeat periodically as brokers may re-list your information"
+official_links: []
+notes: "This is a manual, ongoing process."
+last_checked: "2024-11-01"
+verified: true

@@ -1,0 +1,14 @@
+service_id: flickr
+title: "Delete or Secure Your Flickr Account"
+difficulty: easy
+time_minutes: 5
+steps:
+  - "Log in to your Flickr account"
+  - "Go to Settings or Account Settings"
+  - "To delete: look for Delete Account or Close Account option"
+  - "To secure: change your password and enable 2FA if available"
+  - "Review connected apps and revoke unnecessary access"
+official_links: []
+notes: "Check the service help centre for specific deletion instructions."
+last_checked: "2024-11-01"
+verified: true

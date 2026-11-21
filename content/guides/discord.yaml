@@ -1,0 +1,16 @@
+service_id: discord
+title: "Delete or Secure Your Discord Account"
+difficulty: easy
+time_minutes: 5
+steps:
+  - "Open Discord and log in"
+  - "Go to User Settings (gear icon near your username)"
+  - "To delete: select My Account and click Delete Account"
+  - "To secure: enable two-factor authentication"
+  - "Review authorised apps under User Settings"
+official_links:
+  - url: "https://support.discord.com/hc/en-us/articles/212500837"
+    label: "Discord Support: Delete your account"
+notes: "Account deletion takes 14-30 days. Transfer server ownership first."
+last_checked: "2024-11-01"
+verified: true

@@ -1,0 +1,16 @@
+service_id: google-third-party-apps
+title: "Review Third-Party App Access on Your Google Account"
+difficulty: easy
+time_minutes: 10
+steps:
+  - "Go to myaccount.google.com"
+  - "Navigate to Security then Your connections to third-party apps"
+  - "Review each app - do you still use it?"
+  - "Click on apps you no longer use and select Remove Access"
+  - "For remaining apps, review the permissions they have"
+official_links:
+  - url: "https://myaccount.google.com/connections"
+    label: "Google: Third-party connections"
+notes: "This is a user-guided checklist. FootprintX does not access your Google account."
+last_checked: "2024-11-01"
+verified: true

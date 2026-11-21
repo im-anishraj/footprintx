@@ -1,0 +1,16 @@
+service_id: remove-exif-metadata
+title: "Remove EXIF Metadata from Photos"
+difficulty: easy
+time_minutes: 10
+steps:
+  - "Understand that photos contain hidden metadata (location, device, time)"
+  - "Before sharing photos, strip EXIF data"
+  - "On Windows: right-click image, Properties, Details, Remove Properties"
+  - "On macOS: use Preview, Tools, Show Inspector to remove GPS data"
+  - "For bulk removal: use ExifTool (free, open-source)"
+official_links:
+  - url: "https://exiftool.org/"
+    label: "ExifTool (free, open-source)"
+notes: "Some platforms strip EXIF automatically, but not all."
+last_checked: "2024-11-01"
+verified: true

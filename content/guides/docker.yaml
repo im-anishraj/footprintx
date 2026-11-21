@@ -1,0 +1,15 @@
+service_id: docker
+title: "Delete or Secure Your Docker Hub Account"
+difficulty: medium
+time_minutes: 10
+steps:
+  - "Log in to Docker Hub at hub.docker.com"
+  - "Go to Account Settings"
+  - "To delete: select Delete Account"
+  - "To secure: enable two-factor authentication"
+official_links:
+  - url: "https://docs.docker.com/docker-hub/"
+    label: "Docker Hub Documentation"
+notes: "Deleting removes all repositories permanently."
+last_checked: "2024-11-01"
+verified: true

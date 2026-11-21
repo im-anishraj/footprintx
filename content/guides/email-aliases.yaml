@@ -1,0 +1,16 @@
+service_id: email-aliases
+title: "Set Up Email Aliases for Better Privacy"
+difficulty: medium
+time_minutes: 15
+steps:
+  - "Choose an email alias service (SimpleLogin, Firefox Relay, Apple Hide My Email)"
+  - "Create an account or enable the feature"
+  - "Generate a unique alias for each service you sign up for"
+  - "Use aliases instead of your real email for new registrations"
+  - "Gradually update existing accounts to use aliases"
+official_links:
+  - url: "https://simplelogin.io/"
+    label: "SimpleLogin (open-source)"
+notes: "Email aliases help identify which services share your data."
+last_checked: "2024-11-01"
+verified: true

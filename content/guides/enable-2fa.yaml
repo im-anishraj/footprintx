@@ -1,0 +1,17 @@
+service_id: enable-2fa
+title: "Enable Two-Factor Authentication (2FA)"
+difficulty: easy
+time_minutes: 10
+steps:
+  - "Choose an authenticator app (Google Authenticator, Authy, or 1Password)"
+  - "Install the app on your phone"
+  - "Go to the security settings of the service you want to protect"
+  - "Look for Two-factor authentication or Two-step verification"
+  - "Select Authenticator app as your 2FA method (preferred over SMS)"
+  - "Scan the QR code with your authenticator app"
+  - "Enter the 6-digit code to confirm"
+  - "Save backup/recovery codes in a secure location"
+official_links: []
+notes: "SMS-based 2FA is better than nothing, but authenticator apps are more secure."
+last_checked: "2024-11-01"
+verified: true

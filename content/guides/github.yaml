@@ -1,0 +1,17 @@
+service_id: github
+title: "Delete or Secure Your GitHub Account"
+difficulty: easy
+time_minutes: 10
+steps:
+  - "Log in to your GitHub account at github.com"
+  - "Go to Settings (click your avatar, then Settings)"
+  - "To delete: scroll to the bottom and select Delete your account"
+  - "To secure: go to Settings then Password and authentication"
+  - "Enable two-factor authentication (2FA) using an authenticator app"
+  - "Review authorised OAuth apps under Settings then Applications"
+official_links:
+  - url: "https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-personal-account/deleting-your-personal-account"
+    label: "GitHub Docs: Delete your account"
+notes: "Deleting your account removes all repositories. Fork or transfer important repos first."
+last_checked: "2024-11-01"
+verified: true

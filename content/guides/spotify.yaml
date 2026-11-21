@@ -1,0 +1,16 @@
+service_id: spotify
+title: "Delete or Secure Your Spotify Account"
+difficulty: easy
+time_minutes: 5
+steps:
+  - "Log in to your Spotify account"
+  - "Go to your Account page at account.spotify.com"
+  - "To close: visit the Contact Spotify Support page and request account closure"
+  - "To secure: change your password under Account then Change password"
+  - "Review and remove third-party app connections"
+official_links:
+  - url: "https://support.spotify.com/article/close-account/"
+    label: "Spotify Support: Close your account"
+notes: "Free accounts can be closed immediately. Premium accounts must cancel the subscription first."
+last_checked: "2024-11-01"
+verified: true

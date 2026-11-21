@@ -1,0 +1,14 @@
+service_id: snapchat
+title: "Delete or Secure Your Snapchat Account"
+difficulty: easy
+time_minutes: 5
+steps:
+  - "Open Snapchat or visit accounts.snapchat.com"
+  - "To delete: visit accounts.snapchat.com/accounts/delete_account"
+  - "To secure: enable Two-Factor Authentication in Settings"
+official_links:
+  - url: "https://support.snapchat.com/en-US/a/delete-my-account1"
+    label: "Snapchat Support: Delete your account"
+notes: "Account deactivated for 30 days before permanent deletion."
+last_checked: "2024-11-01"
+verified: true
