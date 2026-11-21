@@ -1,0 +1,105 @@
+services:
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NEXT_PUBLIC_TURNSTILE_SITE_KEY=1x00000000000000000000AA
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - footprintx
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - APP_ENV=development
+      - DATABASE_URL=postgresql+asyncpg://footprintx:footprintx@db:5432/footprintx
+      - REDIS_URL=redis://redis:6379/0
+      - SMTP_HOST=mailpit
+      - SMTP_PORT=1025
+      - WEB_ORIGIN=http://localhost:3000
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      mailpit:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - footprintx
+
+  worker:
+    build:
+      context: .
+      dockerfile: services/scanner/Dockerfile
+    env_file:
+      - .env
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+      - SCANNER_MODE=mock
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - footprintx
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: footprintx
+      POSTGRES_PASSWORD: footprintx
+      POSTGRES_DB: footprintx
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U footprintx"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - footprintx
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - footprintx
+
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    networks:
+      - footprintx
+
+volumes:
+  pgdata:
+
+networks:
+  footprintx:
+    driver: bridge

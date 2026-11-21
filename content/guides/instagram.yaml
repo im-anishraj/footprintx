@@ -1,0 +1,20 @@
+service_id: instagram
+title: "Delete or Secure Your Instagram Account"
+difficulty: easy
+time_minutes: 10
+steps:
+  - "Log in to your Instagram account"
+  - "Go to Settings and privacy → Accounts Centre → Personal details"
+  - "To delete: select 'Account ownership and control' → 'Deactivation or deletion'"
+  - "Choose 'Delete account' and follow the prompts"
+  - "To secure instead: go to Settings → Accounts Centre → Password and security"
+  - "Enable two-factor authentication"
+  - "Review third-party apps under Settings → Apps and websites"
+official_links:
+  - url: "https://help.instagram.com/370452623149242"
+    label: "Instagram Help: Delete your account"
+  - url: "https://help.instagram.com/566810106808145"
+    label: "Instagram Help: Two-factor authentication"
+notes: "After requesting deletion, your account is hidden for 30 days before permanent removal."
+last_checked: "2024-11-01"
+verified: true

@@ -1,0 +1,288 @@
+# FootprintX Service Catalog
+# Each service must be explicitly enabled to be scanned.
+# Categories: social, developer, creative, music, fitness, news, ecommerce, gaming, productivity, education, professional, other
+
+services:
+  # ─── Social Media ───────────────────────────────────────────────
+  - id: twitter
+    name: Twitter / X
+    module: twitter
+    category: social
+    sensitivity: low
+    enabled: true
+    description: "Social media platform"
+
+  - id: instagram
+    name: Instagram
+    module: instagram
+    category: social
+    sensitivity: low
+    enabled: true
+    description: "Photo and video sharing platform"
+
+  - id: snapchat
+    name: Snapchat
+    module: snapchat
+    category: social
+    sensitivity: low
+    enabled: true
+    description: "Messaging and social media platform"
+
+  - id: pinterest
+    name: Pinterest
+    module: pinterest
+    category: social
+    sensitivity: low
+    enabled: true
+    description: "Visual discovery and bookmarking platform"
+
+  - id: tumblr
+    name: Tumblr
+    module: tumblr
+    category: social
+    sensitivity: low
+    enabled: true
+    description: "Microblogging and social networking"
+
+  - id: quora
+    name: Quora
+    module: quora
+    category: social
+    sensitivity: low
+    enabled: true
+    description: "Question and answer platform"
+
+  - id: aboutme
+    name: About.me
+    module: aboutme
+    category: social
+    sensitivity: low
+    enabled: true
+    description: "Personal profile page service"
+
+  - id: gravatar
+    name: Gravatar
+    module: gravatar
+    category: social
+    sensitivity: low
+    enabled: true
+    description: "Globally recognised avatar service"
+
+  - id: vsco
+    name: VSCO
+    module: vsco
+    category: social
+    sensitivity: low
+    enabled: true
+    description: "Photo editing and sharing platform"
+
+  # ─── Developer Platforms ────────────────────────────────────────
+  - id: github
+    name: GitHub
+    module: github
+    category: developer
+    sensitivity: low
+    enabled: true
+    description: "Code hosting and collaboration platform"
+
+  - id: docker
+    name: Docker Hub
+    module: docker
+    category: developer
+    sensitivity: low
+    enabled: true
+    description: "Container image registry"
+
+  - id: codepen
+    name: CodePen
+    module: codepen
+    category: developer
+    sensitivity: low
+    enabled: true
+    description: "Online code editor and sharing platform"
+
+  - id: codecademy
+    name: Codecademy
+    module: codecademy
+    category: education
+    sensitivity: low
+    enabled: true
+    description: "Online coding education platform"
+
+  - id: replit
+    name: Replit
+    module: replit
+    category: developer
+    sensitivity: low
+    enabled: true
+    description: "Online IDE and coding platform"
+
+  - id: atlassian
+    name: Atlassian
+    module: atlassian
+    category: developer
+    sensitivity: low
+    enabled: true
+    description: "Software development and collaboration tools"
+
+  # ─── Creative & Design ─────────────────────────────────────────
+  - id: envato
+    name: Envato
+    module: envato
+    category: creative
+    sensitivity: low
+    enabled: true
+    description: "Digital assets marketplace"
+
+  - id: flickr
+    name: Flickr
+    module: flickr
+    category: creative
+    sensitivity: low
+    enabled: true
+    description: "Photo hosting and sharing service"
+
+  - id: imgur
+    name: Imgur
+    module: imgur
+    category: creative
+    sensitivity: low
+    enabled: true
+    description: "Image hosting and sharing platform"
+
+  - id: issuu
+    name: Issuu
+    module: issuu
+    category: creative
+    sensitivity: low
+    enabled: true
+    description: "Digital publishing platform"
+
+  - id: wattpad
+    name: Wattpad
+    module: wattpad
+    category: creative
+    sensitivity: low
+    enabled: true
+    description: "Online storytelling platform"
+
+  # ─── Music & Audio ─────────────────────────────────────────────
+  - id: spotify
+    name: Spotify
+    module: spotify
+    category: music
+    sensitivity: low
+    enabled: true
+    description: "Music streaming service"
+
+  - id: soundcloud
+    name: SoundCloud
+    module: soundcloud
+    category: music
+    sensitivity: low
+    enabled: true
+    description: "Audio sharing and streaming platform"
+
+  - id: lastfm
+    name: Last.fm
+    module: lastfm
+    category: music
+    sensitivity: low
+    enabled: true
+    description: "Music tracking and discovery service"
+
+  # ─── Fitness & Sports ──────────────────────────────────────────
+  - id: strava
+    name: Strava
+    module: strava
+    category: fitness
+    sensitivity: low
+    enabled: true
+    description: "Fitness tracking and social network"
+
+  - id: nike
+    name: Nike
+    module: nike
+    category: fitness
+    sensitivity: low
+    enabled: true
+    description: "Sports brand and fitness platform"
+
+  # ─── E-commerce & Marketplaces ──────────────────────────────────
+  - id: freelancer
+    name: Freelancer
+    module: freelancer
+    category: ecommerce
+    sensitivity: low
+    enabled: true
+    description: "Freelance marketplace"
+
+  - id: buymeacoffee
+    name: Buy Me a Coffee
+    module: buymeacoffee
+    category: ecommerce
+    sensitivity: low
+    enabled: true
+    description: "Creator support platform"
+
+  # ─── Productivity ──────────────────────────────────────────────
+  - id: evernote
+    name: Evernote
+    module: evernote
+    category: productivity
+    sensitivity: low
+    enabled: true
+    description: "Note-taking and organisation app"
+
+  - id: eventbrite
+    name: Eventbrite
+    module: eventbrite
+    category: productivity
+    sensitivity: low
+    enabled: true
+    description: "Event management and ticketing platform"
+
+  # ─── Gaming ────────────────────────────────────────────────────
+  - id: discord
+    name: Discord
+    module: discord
+    category: gaming
+    sensitivity: low
+    enabled: true
+    description: "Communication platform for communities"
+
+  # ─── Other ─────────────────────────────────────────────────────
+  - id: archive
+    name: Archive.org
+    module: archive
+    category: other
+    sensitivity: low
+    enabled: true
+    description: "Internet Archive and Wayback Machine"
+
+  - id: patreon
+    name: Patreon
+    module: patreon
+    category: ecommerce
+    sensitivity: low
+    enabled: true
+    description: "Creator membership platform"
+
+  - id: samsung
+    name: Samsung
+    module: samsung
+    category: other
+    sensitivity: low
+    enabled: true
+    description: "Samsung account services"
+
+# ─── Excluded Categories ───────────────────────────────────────
+# The following categories are PERMANENTLY excluded by default:
+# - adult: Adult content sites
+# - dating: Dating platforms
+# - health: Health-related forums/journals
+# - financial: Financial services
+# - recovery: Any module that returns recovery data or sends the target a message
+#
+# These modules must NEVER be added to the enabled list without explicit
+# operator override and legal review.

@@ -1,0 +1,20 @@
+service_id: twitter
+title: "Delete or Secure Your Twitter / X Account"
+difficulty: easy
+time_minutes: 5
+steps:
+  - "Log in to your Twitter / X account at x.com"
+  - "Go to Settings and Support → Settings and privacy"
+  - "Select 'Your account' → 'Deactivate your account'"
+  - "To secure instead: go to Settings → Security and account access → Security"
+  - "Enable two-factor authentication (2FA)"
+  - "Review connected apps under Settings → Security and account access → Apps and sessions"
+  - "Revoke access for apps you don't recognise"
+official_links:
+  - url: "https://help.x.com/en/managing-your-account/how-to-deactivate-x-account"
+    label: "X Help: Deactivate account"
+  - url: "https://help.x.com/en/managing-your-account/two-factor-authentication"
+    label: "X Help: Two-factor authentication"
+notes: "Deactivated accounts are permanently deleted after 30 days. Download your data first if needed."
+last_checked: "2024-11-01"
+verified: true
